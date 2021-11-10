@@ -8,6 +8,12 @@ f = "abc"
 print(f)
 
 # Gerando um erro, tentando unir variáveis de tipos diferentes
-
-
+print ("isto é uma string" + str(123))
 # Variável Global X Variável local 
+def AlgumaFuncao():
+    global f
+    f = "def"
+    print (f)
+
+AlgumaFuncao()
+print(f)
